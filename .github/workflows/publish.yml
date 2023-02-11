@@ -23,7 +23,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build -- --base=/simple-entwine/
       - uses: actions/upload-pages-artifact@v1
         with:
           path: dist
