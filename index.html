@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entwine</title>
+    <title>Simple Entwine</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <h1>Simple Entwine</h1>
+      <p>This merges multiple Twine stories into one.</p>
+      <form>
+        <ol>
+          <li>
+            <label>
+              Select the Twine story files to merge. (Use the Shift or Control
+              keys when choosing files to select multiple.)
+              <input accept="file" id="sources" multiple type="file" />
+            </label>
+          </li>
+          <li hidden id="startFileContainer">
+            <label>Which story file should be the starting point for the merged file?
+              <select id="startFile"></select>
+            </label>
+          </li>    
+        </ol>
+        <button disabled type="submit">Merge</button>
+      </form>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
