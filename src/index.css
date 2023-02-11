@@ -1,0 +1,21 @@
+@import 'bulma/css/bulma.css';
+
+main {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+input[type="file"], .select-container {
+	display: block;
+	margin: 1em 0; 
+}
+
+ol {
+	padding: 1em 0 1em 3em;
+	margin-left: -3em;
+}
+
+ol li {
+	margin-bottom: 2em;
+}
